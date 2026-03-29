@@ -104,136 +104,145 @@
   </div>
 
   <!-- RIGHT: FORM -->
-  <div class="cf-form-wrap">
 
-    <div class="cf-section-label">Your details</div>
+  <form 
+    name="consultation" 
+    method="POST" 
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/success.html"
+  >
+    <div class="cf-form-wrap">
 
-    <div class="cf-row">
-      <div class="cf-field">
-        <label class="cf-label">Full name</label>
-        <input class="cf-input" type="text" placeholder="Jane Smith"/>
-      </div>
-      <div class="cf-field">
-        <label class="cf-label">Work email</label>
-        <input class="cf-input" type="email" placeholder="jane@organisation.com"/>
-      </div>
-    </div>
+      <div class="cf-section-label">Your details</div>
 
-    <div class="cf-row">
-      <div class="cf-field">
-        <label class="cf-label">Organisation</label>
-        <input class="cf-input" type="text" placeholder="Organisation name"/>
-      </div>
-      <div class="cf-field">
-        <label class="cf-label">Job title</label>
-        <input class="cf-input" type="text" placeholder="e.g. Head of Data Science"/>
-      </div>
-    </div>
-
-    <div class="cf-row">
-      <div class="cf-field">
-        <label class="cf-label">Country</label>
-        <select class="cf-select">
-          <option value="" disabled selected>Select country</option>
-          <option>United Kingdom</option>
-          <option>Germany</option>
-          <option>France</option>
-          <option>Netherlands</option>
-          <option>United States</option>
-          <option>Australia</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="cf-field">
-        <label class="cf-label">Industry</label>
-        <select class="cf-select">
-          <option value="" disabled selected>Select industry</option>
-          <option>Banking &amp; Finance</option>
-          <option>Healthcare</option>
-          <option>Research &amp; Academia</option>
-          <option>Government</option>
-          <option>Telecommunications</option>
-          <option>Insurance</option>
-          <option>Other</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="cf-section-label">Your use case</div>
-
-    <div class="cf-row full">
-      <div class="cf-field">
-        <label class="cf-label">Service of interest</label>
-        <div class="cf-pills">
-          <input class="cf-pill-input" type="radio" name="service" id="s1"/>
-          <label class="cf-pill-label" for="s1">FL Readiness Assessment</label>
-          <input class="cf-pill-input" type="radio" name="service" id="s2"/>
-          <label class="cf-pill-label" for="s2">FL System Design</label>
-          <input class="cf-pill-input" type="radio" name="service" id="s3"/>
-          <label class="cf-pill-label" for="s3">Deployment &amp; Support</label>
-          <input class="cf-pill-input" type="radio" name="service" id="s4"/>
-          <label class="cf-pill-label" for="s4">Not sure yet</label>
+      <div class="cf-row">
+        <div class="cf-field">
+          <label class="cf-label">Full name</label>
+          <input class="cf-input" type="text" placeholder="Jane Smith"/>
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">Work email</label>
+          <input class="cf-input" type="email" placeholder="jane@organisation.com"/>
         </div>
       </div>
-    </div>
 
-    <div class="cf-row full" style="margin-top:16px;">
-      <div class="cf-field">
-        <label class="cf-label">Approximate dataset size</label>
-        <div class="cf-pills">
-          <input class="cf-pill-input" type="radio" name="size" id="d1"/>
-          <label class="cf-pill-label" for="d1">&lt; 1 GB</label>
-          <input class="cf-pill-input" type="radio" name="size" id="d2"/>
-          <label class="cf-pill-label" for="d2">1 GB – 1 TB</label>
-          <input class="cf-pill-input" type="radio" name="size" id="d3"/>
-          <label class="cf-pill-label" for="d3">1 TB – 1 PB</label>
-          <input class="cf-pill-input" type="radio" name="size" id="d4"/>
-          <label class="cf-pill-label" for="d4">&gt; 1 PB</label>
-          <input class="cf-pill-input" type="radio" name="size" id="d5"/>
-          <label class="cf-pill-label" for="d5">Unknown</label>
+      <div class="cf-row">
+        <div class="cf-field">
+          <label class="cf-label">Organisation</label>
+          <input class="cf-input" type="text" placeholder="Organisation name"/>
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">Job title</label>
+          <input class="cf-input" type="text" placeholder="e.g. Head of Data Science"/>
         </div>
       </div>
-    </div>
 
-    <div class="cf-row full" style="margin-top:16px;">
-      <div class="cf-field">
-        <label class="cf-label">Describe your use case</label>
-        <textarea class="cf-textarea" placeholder="Briefly describe your data, the problem you are trying to solve, and any privacy or regulatory constraints you are working under..."></textarea>
+      <div class="cf-row">
+        <div class="cf-field">
+          <label class="cf-label">Country</label>
+          <select class="cf-select">
+            <option value="" disabled selected>Select country</option>
+            <option>United Kingdom</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>Netherlands</option>
+            <option>United States</option>
+            <option>Australia</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">Industry</label>
+          <select class="cf-select">
+            <option value="" disabled selected>Select industry</option>
+            <option>Banking &amp; Finance</option>
+            <option>Healthcare</option>
+            <option>Research &amp; Academia</option>
+            <option>Government</option>
+            <option>Telecommunications</option>
+            <option>Insurance</option>
+            <option>Other</option>
+          </select>
+        </div>
       </div>
-    </div>
 
-    <div class="cf-section-label">Logistics</div>
+      <div class="cf-section-label">Your use case</div>
 
-    <div class="cf-row">
-      <div class="cf-field">
-        <label class="cf-label">Preferred contact method</label>
-        <select class="cf-select">
-          <option value="" disabled selected>Select preference</option>
-          <option>Email</option>
-          <option>Video call</option>
-        </select>
+      <div class="cf-row full">
+        <div class="cf-field">
+          <label class="cf-label">Service of interest</label>
+          <div class="cf-pills">
+            <input class="cf-pill-input" type="radio" name="service" id="s1"/>
+            <label class="cf-pill-label" for="s1">FL Readiness Assessment</label>
+            <input class="cf-pill-input" type="radio" name="service" id="s2"/>
+            <label class="cf-pill-label" for="s2">FL System Design</label>
+            <input class="cf-pill-input" type="radio" name="service" id="s3"/>
+            <label class="cf-pill-label" for="s3">Deployment &amp; Support</label>
+            <input class="cf-pill-input" type="radio" name="service" id="s4"/>
+            <label class="cf-pill-label" for="s4">Not sure yet</label>
+          </div>
+        </div>
       </div>
-      <div class="cf-field">
-        <label class="cf-label">How did you hear about us</label>
-        <select class="cf-select">
-          <option value="" disabled selected>Select source</option>
-          <option>LinkedIn</option>
-          <option>Web search</option>
-          <option>Conference or event</option>
-          <option>Referral</option>
-          <option>Other</option>
-        </select>
+
+      <div class="cf-row full" style="margin-top:16px;">
+        <div class="cf-field">
+          <label class="cf-label">Approximate dataset size</label>
+          <div class="cf-pills">
+            <input class="cf-pill-input" type="radio" name="size" id="d1"/>
+            <label class="cf-pill-label" for="d1">&lt; 1 GB</label>
+            <input class="cf-pill-input" type="radio" name="size" id="d2"/>
+            <label class="cf-pill-label" for="d2">1 GB – 1 TB</label>
+            <input class="cf-pill-input" type="radio" name="size" id="d3"/>
+            <label class="cf-pill-label" for="d3">1 TB – 1 PB</label>
+            <input class="cf-pill-input" type="radio" name="size" id="d4"/>
+            <label class="cf-pill-label" for="d4">&gt; 1 PB</label>
+            <input class="cf-pill-input" type="radio" name="size" id="d5"/>
+            <label class="cf-pill-label" for="d5">Unknown</label>
+          </div>
+        </div>
       </div>
+
+      <div class="cf-row full" style="margin-top:16px;">
+        <div class="cf-field">
+          <label class="cf-label">Describe your use case</label>
+          <textarea class="cf-textarea" placeholder="Briefly describe your data, the problem you are trying to solve, and any privacy or regulatory constraints you are working under..."></textarea>
+        </div>
+      </div>
+
+      <div class="cf-section-label">Logistics</div>
+
+      <div class="cf-row">
+        <div class="cf-field">
+          <label class="cf-label">Preferred contact method</label>
+          <select class="cf-select">
+            <option value="" disabled selected>Select preference</option>
+            <option>Email</option>
+            <option>Video call</option>
+          </select>
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">How did you hear about us</label>
+          <select class="cf-select">
+            <option value="" disabled selected>Select source</option>
+            <option>LinkedIn</option>
+            <option>Web search</option>
+            <option>Conference or event</option>
+            <option>Referral</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="cf-submit">
+        Submit consultation request
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
     </div>
-
-    <button class="cf-submit">
-      Submit consultation request
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
-
-  </div>
+  </form>
 
 </div>
 </section>

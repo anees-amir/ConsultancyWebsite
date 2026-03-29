@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Privacy: Thank You</title>
+  <link rel="icon" type="image/png" href="images/logo_header.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/logo_2-cropped.svg" alt="AI Privacy Consultancy Logo" class="logo-img">
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="technologies.html">Technologies</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Consultation</a></li>
+    </ul>
+  </nav>
+
+  <section style="min-height:70vh; display:flex; align-items:center; justify-content:center; padding:120px 48px;">
+    <div style="text-align:center; max-width:560px;">
+
+      <!-- animated tick -->
+      <div style="width:64px; height:64px; border:1px solid rgba(0,212,255,0.4); background:rgba(0,212,255,0.05); display:flex; align-items:center; justify-content:center; margin:0 auto 32px;">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M6 14l6 6 10-10" stroke="rgba(0,212,255,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            style="stroke-dasharray:30; stroke-dashoffset:30; animation:tickDraw 0.6s ease forwards 0.2s;"/>
+        </svg>
+      </div>
+
+      <div class="hero-badge" style="display:inline-flex; margin-bottom:24px;">
+        <span class="pulse-dot"></span>
+        Submission received
+      </div>
+
+      <h1 style="font-family:'Syne',sans-serif; font-size:clamp(24px,3vw,38px); font-weight:800; color:#eef2ff; line-height:1.15; margin:0 0 16px;">
+        Thank you for reaching out
+      </h1>
+
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:rgba(180,200,230,0.55); line-height:1.8; margin:0 0 40px;">
+        Your consultation request has been received. I will review your submission and get back to you within 24 hours with a proposed agenda for our call.
+      </p>
+
+      <a href="index.html" class="btn-primary">
+        Back to home
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </div>
+  </section>
+
+  <style>
+    @keyframes tickDraw {
+      to { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <footer style="padding:60px 48px 30px; border-top:1px solid var(--border); background:var(--navy);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:40px; margin-bottom:40px;">
+      <div style="max-width:260px;">
+        <div class="logo" style="margin-bottom:16px;">
+          <img src="images/logo_2-cropped.svg" alt="FedPrivacy Logo" style="width:200px; height:100px;">
+        </div>
+        <p style="font-size:14px; line-height:1.6; color:var(--text-dim);">
+          AI Privacy consultancy specialising in federated learning systems for real-world deployment.
+        </p>
+      </div>
+      <div style="display:flex; gap:50px; flex-wrap:wrap;">
+        <span>© 2026 AIPrivacyConsultancy. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
