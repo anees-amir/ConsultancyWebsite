@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Privacy: Case-Studies</title>
+  <link rel="icon" type="image/png" href="images/logo_header.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- ########################################################## -->
+
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/logo_2-cropped.svg" alt="AI Privacy Consultancy Logo" class="logo-img">
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="technologies.html">Technologies</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Consultation</a></li>
+    </ul>
+  </nav>
+
+ <!-- ########################################################## -->
+
+<section style="min-height:50vh; display:flex; align-items:center; justify-content:space-between; padding:120px 48px 80px; gap:60px;">
+
+  <!-- LEFT -->
+  <div style="max-width:680px; position:relative; z-index:2;">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      Our Services
+    </div>
+
+    <h1>
+      Federated learning
+      <span class="orange-text" style="display:block;">
+        applied in the real world
+      </span>
+    </h1>
+
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:rgba(180,200,230,0.55); line-height:1.75; max-width:480px; margin:0;">
+      Two end-to-end deployments — one driven by regulation, one by physical scale. Both demonstrating that collaborative AI is possible without moving a single byte of raw data.
+    </p>
+
+  </div>
+
+  <!-- RIGHT: case cards -->
+  <div style="flex-shrink:0; display:flex; flex-direction:column; gap:14px; width:340px;">
+
+    <a href="#case-banking" class="th-link">
+      <div class="csh-case">
+        <span class="csh-case-num">01</span>
+        <div style="flex:1; min-width:0;">
+          <span class="csh-case-tag">Banking · Combined FL</span>
+          <span class="csh-case-title">Cross-institutional fraud detection across four institutes</span>
+          <div class="csh-case-meta">
+            <span class="csh-case-pill">Neural Net</span>
+            <span class="csh-case-pill">Combined</span>
+            <span class="csh-case-pill">FedAvg</span>
+            <span class="csh-case-pill">DP ε=0.8</span>
+            <span class="csh-case-pill">Flower</span>
+          </div>
+        </div>
+        <span class="csh-dot"></span>
+      </div>
+    </a>
+
+    <a href="#case-astronomy" class="th-link">
+      <div class="csh-case">
+        <span class="csh-case-num">02</span>
+        <div style="flex:1; min-width:0;">
+          <span class="csh-case-tag">Astronomy · Horizontal FL</span>
+          <span class="csh-case-title">Distributed galaxy classification across three survey institutes</span>
+          <div class="csh-case-meta">
+            <span class="csh-case-pill">CNN</span>
+            <span class="csh-case-pill">FedProx</span>
+            <span class="csh-case-pill">Horizontal</span>
+            <span class="csh-case-pill">Flower</span>
+          </div>
+        </div>
+        <span class="csh-dot"></span>
+      </div>
+    </a>
+
+  </div>
+  
+
+</section>
+
+    <hr>
+
+ <!-- ########################################################## -->
+
+ <section id="case-banking" style="scroll-margin-top: 100px; padding:30px 48px; background:rgba(0,212,255,0.02);">
+
+  <!-- Header -->
+  <div class="cs-eyebrow">
+    <span class="pulse-dot"></span>
+    Case Study 01 · Banking · Combined FL
+  </div>
+
+  <h2>
+    Cross-institutional fraud detection <br>
+    across four institutes
+  </h2>
+
+  <p style="font-size:18px; max-width:1800px; margin:16px auto 0;">
+    Fraud rings rarely confine themselves to a single institution. This case study explores how four major financial organisations <br>
+    built a shared fraud detection model using FL — without any institution exposing its customer data to the others.
+  </p>
+
+  <div class="cs-divider"></div>
+
+  <hr class="short-line">
+
+  <!-- 01 · Background -->
+<div class="cs-section">
+  <div class="cs-label">01 · Background</div>
+  <h2 class="cs-section-title">The data landscape</h2>
+
+  <p class="cs-body">
+    Four financial institutions jointly aim to detect fraud, but their data is both horizontally and vertically partitioned. 
+    Some customers are shared across institutions, while each organisation observes a different subset of features.
+  </p>
+
+  <div class="cs-two">
+    <div class="cs-box">
+      <h4>Customer distribution (overlap)</h4>
+      <ul>
+        <li>Retail Bank — customers C1–C600</li>
+        <li>Corporate Bank — customers C400–C1200</li>
+        <li>Credit Bureau — customers C200–C800</li>
+        <li>Digital Bank — customers C700–C1200</li>
+      </ul>
+      <p class="cs-note">
+        → Overlapping IDs (e.g., C400–C600) appear in multiple banks, but no institution sees the full population (C1–C1200).
+      </p>
+    </div>
+
+    <div class="cs-box">
+      <h4>Feature distribution (by institution)</h4>
+      <ul>
+        <li>Retail Bank — transaction amounts, timestamps, merchant categories</li>
+        <li>Corporate Bank — corporate transfers, account balances, cash flow patterns</li>
+        <li>Credit Bureau — credit scores, loan history, default indicators</li>
+        <li>Digital Bank — device IDs, IP addresses, login behaviour</li>
+        <li>Fraud labels are available only at Retail and Corporate Banks.</li>
+      </ul>
+      <p class="cs-note">
+        → Features are disjoint across institutions; no single bank has a complete feature vector.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<hr class="short-line">
+
+  <!-- 02 · Problem -->
+  <div class="cs-section">
+    <div class="cs-label">02 · The Problem</div>
+    <h2 class="cs-section-title">Why data sharing is not an option</h2>
+    <p class="cs-body">
+      Each institution holds sensitive financial data governed by strict privacy and banking regulations. Centralising this data — even in encrypted form — would require complex approvals and is often not feasible. Meanwhile, fraud losses are significant, with a large share driven by cross-institution activity. The need for collaboration is clear, but raw data sharing is not viable.
+    </p>
+  </div>
+
+  <hr class="short-line">
+  
+  <!-- 04 · FL Assessment -->
+  <div class="cs-section">
+    <div class="cs-label">04 · FL Assessment and Design</div>
+    <h2 class="cs-section-title">Technical configuration</h2>
+
+    <div class="cs-assess">
+
+      <div class="cs-assess-card">
+        <span class="label">ML Model</span>
+        <span class="value">Neural Net</span>
+        <span class="detail">4-layer MLP with dropout — handles sparse labels and mixed feature types.</span>
+      </div>
+
+      <div class="cs-assess-card">
+        <span class="label">Partitioning</span>
+        <span class="value">Combined</span>
+        <span class="detail">Overlapping customers, different feature sets across all four institutions.</span>
+      </div>
+
+      <div class="cs-assess-card">
+        <span class="label">Privacy</span>
+        <span class="value">DP (ε=0.8)</span>
+        <span class="detail">Gaussian noise added to gradients before upload.</span>
+      </div>
+      
+      <div class="cs-assess-card">
+        <span class="label">Aggregation</span>
+        <span class="value">FedAvg</span>
+        <span class="detail">Weighted by dataset size per round.</span>
+      </div>
+
+      <div class="cs-assess-card">
+        <span class="label">Framework</span>
+        <span class="value">Flower</span>
+        <span class="detail">Flower was selected for its framework-agnostic client API and proven cross-silo support.</span>
+      </div>
+      
+    </div>
+  </div>
+
+   <hr class="short-line">
+
+  <!-- 05 · Implementation -->
+  <div class="cs-section">
+    <div class="cs-label">05 · Implementation</div>
+    <h2 class="cs-section-title">How it was built</h2>
+    <div class="cs-flow">
+      <div class="cs-flow-step">
+        <span class="cs-flow-num">01</span>
+        <div class="cs-flow-content">
+          <h5>Entity alignment — private set intersection</h5>
+          <p>Before training, a private set intersection protocol identified shared customer IDs across institutions without revealing the IDs themselves. This produced a shared index used to align vertical features without centralising data.</p>
+        </div>
+      </div>
+      <div class="cs-flow-step">
+        <span class="cs-flow-num">02</span>
+        <div class="cs-flow-content">
+          <h5>Training — 40 federated rounds</h5>
+          <p>Each round: local training on institution data → DP noise injection → gradient or inetermdeiate information upload to server → FedAvg aggregation → global model broadcast. No raw data left any institution at any point.</p>
+        </div>
+      </div>
+      <div class="cs-flow-step">
+        <span class="cs-flow-num">03</span>
+        <div class="cs-flow-content">
+          <h5>Validation — held-out test sets per institution</h5>
+          <p>Each institution evaluated the global model on its own labelled holdout set. Results were aggregated by the server into a single performance report — again without sharing institution-level predictions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="short-line">
+
+  <!-- 06 · Outcomes -->
+  <div class="cs-section">
+    <div class="cs-label">06 · Outcomes</div>
+    <h2 class="cs-section-title">Results across the three service pillars</h2>
+    <p class="cs-body">
+      The federated model outperformed each institution's siloed baseline on every metric — demonstrating that collaboration without data sharing is not only legally viable but technically superior.
+    </p>
+    <div class="cs-assess">
+      <div class="cs-outcome">
+        <span class="cs-outcome-num">+34%</span>
+        <span class="cs-outcome-label">improvement in cross-institution fraud detection rate vs individual institution baselines</span>
+      </div>
+      <div class="cs-outcome">
+        <span class="cs-outcome-num">−41%</span>
+        <span class="cs-outcome-label">reduction in false positive rate — fewer legitimate transactions incorrectly flagged</span>
+      </div>
+      <div class="cs-outcome">
+        <span class="cs-outcome-num">100%</span>
+        <span class="cs-outcome-label">compliance and privacy maintained — zero raw data shared between institutions</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<hr>
+
+<!-- ########################################################## -->
+
+<section id="case-astronomy" style="scroll-margin-top: 100px; padding:30px 48px; background:rgba(0,212,255,0.02);">
+
+  <!-- Header -->
+  <div class="cs-eyebrow">
+    <span class="pulse-dot"></span>
+    Case Study 02 · Astronomy · Horizontal FL
+  </div>
+
+  <h2>
+    Distributed galaxy classification <br>
+    across three astronomical survey institutes
+  </h2>
+
+  <p style="font-size:18px; max-width:1800px; margin:16px auto 0;">
+    Modern sky surveys generate petabytes of imaging data that no single institution can centralise or process alone. This case study explores how three major astronomical research institutes trained a shared galaxy classification model using horizontal FL — keeping data local where the compute lives.
+  </p>
+
+  <div class="cs-divider"></div>
+
+  <hr class="short-line">
+
+  <!-- 01 · Background -->
+<div class="cs-section">
+  <div class="cs-label">01 · Background</div>
+  <h2 class="cs-section-title">The data landscape</h2>
+
+  <p class="cs-body">
+    Three institutes independently operate large-scale sky survey telescopes, each accumulating imaging data at a rate that outpaces network transfer capacity. Each institute captures the same kinds of objects — galaxies, nebulae, stellar clusters — using the same feature schema and labelling conventions. The data is horizontally partitioned: same features, entirely different sky regions and samples.
+  </p>
+
+  <div class="cs-two">
+    <div class="cs-box">
+      <h4>Data holders</h4>
+      <ul>
+        <li>Node 1: Imaging data of size 1.8 PB</li>
+        <li>Node 1: Imaging data of size 2.3 PB</li>
+        <li>Node 1: Imaging data of size 1.4 PB</li>
+      </ul>
+    </div>
+
+    <div class="cs-box">
+      <h4>Data types</h4>
+      <ul>
+        <li>Image — multi-band telescope imaging (RGB + infrared)</li>
+        <li>Labels — galaxy morphology classes (spiral, elliptical, irregular)</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<hr class="short-line">
+
+  <!-- 02 · Problem -->
+  <div class="cs-section">
+    <div class="cs-label">02 · The Problem</div>
+    <h2 class="cs-section-title">Why centralisation is physically impossible</h2>
+    <p class="cs-body">
+      Unlike most FL scenarios, the barrier here is not legal or regulatory — it is purely physical. The combined dataset across the three institutes exceeds 5.5 petabytes of raw imaging data. Transferring this volume over even a dedicated 100 Gbps research network would take over 120 days of continuous transfer, with storage and preprocessing costs in the tens of millions of dollars. Furthermore, no single compute facility has the GPU memory capacity to train a CNN on the full combined dataset in memory. The data must stay where the storage and local compute infrastructure already exists.
+    </p>
+  </div>
+
+  <hr class="short-line">
+  
+  <!-- 04 · FL Assessment -->
+  <div class="cs-section">
+    <div class="cs-label">04 · FL Assessment and Design</div>
+    <h2 class="cs-section-title">Technical configuration</h2>
+
+    <div class="cs-assess">
+
+      <div class="cs-assess-card">
+        <span class="label">ML Model</span>
+        <span class="value">CNN</span>
+        <span class="detail">ResNet-50 backbone fine-tuned for galaxy morphology — pretrained on ImageNet.</span>
+      </div>
+
+      <div class="cs-assess-card">
+        <span class="label">Partitioning</span>
+        <span class="value">Horizontal</span>
+        <span class="detail">Same feature schema and label set — different sky regions and samples at each institute</span>
+      </div>
+
+      <div class="cs-assess-card">
+        <span class="label">Privacy</span>
+        <span class="value">None required</span>
+        <span class="detail">Astronomical imaging contains no personal data — standard model updates with no noise addition.</span>
+      </div>
+      
+      <div class="cs-assess-card">
+        <span class="label">Aggregation</span>
+        <span class="value">FedProx</span>
+        <span class="detail">Proximal term (μ=0.01) handles unequal dataset sizes and partial round participation.</span>
+      </div>
+
+      <div class="cs-assess-card">
+        <span class="label">Framework</span>
+        <span class="value">Flower</span>
+        <span class="detail">Flower was selected for its framework-agnostic client API.</span>
+      </div>
+      
+    </div>
+  </div>
+
+   <hr class="short-line">
+
+  <!-- 05 · Implementation -->
+  <div class="cs-section">
+    <div class="cs-label">05 · Implementation</div>
+    <h2 class="cs-section-title">How it was built</h2>
+    <div class="cs-flow">
+      <div class="cs-flow-step">
+        <span class="cs-flow-num">01</span>
+        <div class="cs-flow-content">
+          <h5>Data preprocessing — local standardisation pipelines</h5>
+          <p>Each institute applied an identical preprocessing pipeline locally: image normalisation to a shared photometric scale, augmentation (random crop, flip, rotation) and resizing to 224×224 pixels. Alignment was verified by comparing summary statistics — not by sharing images — before the first training round.</p>
+        </div>
+      </div>
+      <div class="cs-flow-step">
+        <span class="cs-flow-num">02</span>
+        <div class="cs-flow-content">
+          <h5>Training — 60 federated rounds with async participation</h5>
+          <p>Each round: local CNN training for 3 epochs on institute GPU cluster → weight upload to CERN server (~280 MB per client) → FedProx aggregation → global model broadcast. Node 1, with fewer GPUs, was permitted to skip up to 20% of rounds without destabilising convergence — a key advantage of FedProx over FedAvg.</p>
+        </div>
+      </div>
+      <div class="cs-flow-step">
+        <span class="cs-flow-num">03</span>
+        <div class="cs-flow-content">
+          <h5>Validation — cross-institute held-out sky patches</h5>
+          <p>Each institute held back 10% of labelled images for local validation. The global model was also evaluated on a small jointly-curated benchmark set of 12,000 images — the only data physically transferred during the entire project, at under 20 GB.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="short-line">
+
+  <!-- 06 · Outcomes -->
+  <div class="cs-section">
+    <div class="cs-label">06 · Outcomes</div>
+    <h2 class="cs-section-title">Results across the three service pillars</h2>
+    <p class="cs-body">
+      The federated CNN matched the accuracy of a hypothetical centralised model trained on all data — without a single raw image leaving its institute of origin. Training that would have required 120+ days of data transfer was completed in under two weeks of federated rounds.
+    </p>
+    <div class="cs-assess">
+      <div class="cs-outcome">
+        <span class="cs-outcome-num">94.2%</span>
+        <span class="cs-outcome-label">alaxy morphology classification accuracy — within 0.8% of a simulated centralised baseline</span>
+      </div>
+      <div class="cs-outcome">
+        <span class="cs-outcome-num">11 days</span>
+        <span class="cs-outcome-label">total training time across 60 rounds — vs 120+ days data transfer for any centralised approach</span>
+      </div>
+      <div class="cs-outcome">
+        <span class="cs-outcome-num"> &asymp; 280 MB</span>
+        <span class="cs-outcome-label">data transferred per round per node — vs petabytes for centralised training</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<hr>
+
+<!-- ########################################################## -->
+
+<section style="padding:50px 48px; display:flex; justify-content:center; align-items:center;">
+  
+  <div style="position:relative; max-width:900px; width:100%; text-align:center; padding:80px 48px; border:1px solid var(--border); background:var(--navy-2); overflow:hidden;">
+    
+    <!-- Subtle glow background -->
+    <div class="glow-orb" style="width:600px; height:300px; top:50%; left:50%; transform:translate(-50%, -50%); opacity:0.6;"></div>
+
+    <!-- Content -->
+    <div style="position:relative; z-index:2;">
+      
+      <span class="section-label">Get Started</span>
+      
+      <h2 style="max-width:640px; margin:0 auto 24px;">
+        Start your journey toward privacy-preserving AI
+      </h2>
+      
+      <p style="max-width:520px; margin:0 auto 40px; font-size:17px;">
+        Whether you're exploring FL or ready to deploy, we can help you assess, design and implement the right solution for your organisation.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        
+        <a href="contact.html" class="btn-primary">
+          Book a consultation
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+ 
+ <!-- ########################################################## -->
+
+<footer style="padding:60px 48px 30px; border-top:1px solid var(--border); background:var(--navy);">
+  
+  <!-- Top Row -->
+  <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:40px; margin-bottom:40px;">
+    
+    <!-- Left: Logo + Tagline -->
+    <div style="max-width:260px;">
+      <div class="logo" style="margin-bottom:16px;">
+        <img src="images/logo_2-cropped.svg" alt="FedPrivacy Logo" style="width:200px; height:100px;">
+        
+      </div>
+      <p style="font-size:14px; line-height:1.6; color:var(--text-dim);">
+        AI Privacy consultancy specialising in federated learning systems for real-world deployment.
+      </p>
+    </div>
+
+    <!-- Right: Links -->
+    <div style="display:flex; gap:50px; flex-wrap:wrap;">
+      
+      <span>© 2026 AIPrivacyConsultancy. All rights reserved.</span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- ########################################################## -->
+
+
+
+  <script>
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+  </script>
+
+</body>
+</html>
