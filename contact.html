@@ -119,29 +119,29 @@
       <div class="cf-row">
         <div class="cf-field">
           <label class="cf-label">Full name</label>
-          <input class="cf-input" type="text" placeholder="Jane Smith"/>
+          <input class="cf-input" type="text" name="full-name"  placeholder="Jane Smith"/>
         </div>
         <div class="cf-field">
           <label class="cf-label">Work email</label>
-          <input class="cf-input" type="email" placeholder="jane@organisation.com"/>
+          <input class="cf-input" type="email" name="email"  placeholder="jane@organisation.com"/>
         </div>
       </div>
 
       <div class="cf-row">
         <div class="cf-field">
           <label class="cf-label">Organisation</label>
-          <input class="cf-input" type="text" placeholder="Organisation name"/>
+          <input class="cf-input" type="text" name="organisation" placeholder="Organisation name"/>
         </div>
         <div class="cf-field">
           <label class="cf-label">Job title</label>
-          <input class="cf-input" type="text" placeholder="e.g. Head of Data Science"/>
+          <input class="cf-input" type="text" name="job-title" placeholder="e.g. Head of Data Science"/>
         </div>
       </div>
 
       <div class="cf-row">
         <div class="cf-field">
           <label class="cf-label">Country</label>
-          <select class="cf-select">
+          <select class="cf-select" name="country">
             <option value="" disabled selected>Select country</option>
             <option>United Kingdom</option>
             <option>Germany</option>
@@ -154,7 +154,7 @@
         </div>
         <div class="cf-field">
           <label class="cf-label">Industry</label>
-          <select class="cf-select">
+          <select class="cf-select" name="industry">
             <option value="" disabled selected>Select industry</option>
             <option>Banking &amp; Finance</option>
             <option>Healthcare</option>
@@ -206,7 +206,7 @@
       <div class="cf-row full" style="margin-top:16px;">
         <div class="cf-field">
           <label class="cf-label">Describe your use case</label>
-          <textarea class="cf-textarea" placeholder="Briefly describe your data, the problem you are trying to solve, and any privacy or regulatory constraints you are working under..."></textarea>
+          <textarea class="cf-textarea" name="use-case" placeholder="Briefly describe your data, the problem you are trying to solve, and any privacy or regulatory constraints you are working under..."></textarea>
         </div>
       </div>
 
@@ -215,7 +215,7 @@
       <div class="cf-row">
         <div class="cf-field">
           <label class="cf-label">Preferred contact method</label>
-          <select class="cf-select">
+          <select class="cf-select" name="contact-method">
             <option value="" disabled selected>Select preference</option>
             <option>Email</option>
             <option>Video call</option>
@@ -223,7 +223,7 @@
         </div>
         <div class="cf-field">
           <label class="cf-label">How did you hear about us</label>
-          <select class="cf-select">
+          <select class="cf-select" name="how-did-you-hear">
             <option value="" disabled selected>Select source</option>
             <option>LinkedIn</option>
             <option>Web search</option>
