@@ -41,12 +41,62 @@
         Submission received
       </div>
 
-      <h1 style="font-family:'Syne',sans-serif; font-size:clamp(24px,3vw,38px); font-weight:800; color:#eef2ff; line-height:1.15; margin:0 0 16px;">
+            <!-- submission summary -->
+        <div id="submission-summary" style="
+        text-align:left;
+        border:1px solid rgba(0,212,255,0.15);
+        background:rgba(0,212,255,0.03);
+        padding:28px 32px;
+        margin:0 0 40px;
+        max-width:560px;
+        ">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:0.12em; color:rgba(0,212,255,0.4); text-transform:uppercase; margin-bottom:16px;">Submission summary</div>
+        <div id="summary-fields" style="display:flex; flex-direction:column; gap:10px;"></div>
+        </div>
+
+        <script>
+        const labels = {
+            'full-name':        'Full name',
+            'email':            'Email',
+            'organisation':     'Organisation',
+            'job-title':        'Job title',
+            'country':          'Country',
+            'industry':         'Industry',
+            'service':          'Service of interest',
+            'size':             'Dataset size',
+            'use-case':         'Use case',
+            'contact-method':   'Preferred contact',
+            'how-did-you-hear': 'How did you hear'
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const container = document.getElementById('summary-fields');
+        let hasData = false;
+
+        Object.entries(labels).forEach(([key, label]) => {
+            const value = params.get(key);
+            if (!value || value.trim() === '') return;
+            hasData = true;
+            const row = document.createElement('div');
+            row.style.cssText = 'display:flex; gap:16px; align-items:flex-start; padding:8px 0; border-bottom:1px solid rgba(255,107,43,0.08);';
+            row.innerHTML = `
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:rgba(0,212,255,0.45); width:140px; flex-shrink:0; padding-top:1px; letter-spacing:0.04em;">${label}</span>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:rgba(220,230,255,0.8); line-height:1.6; flex:1;">${decodeURIComponent(value.replace(/\+/g, ' '))}</span>
+            `;
+            container.appendChild(row);
+        });
+
+        if (!hasData) {
+            document.getElementById('submission-summary').style.display = 'none';
+        }
+        </script>
+
+      <h1 style="font-family:'Syne',sans-serif; font-size:clamp(24px,3vw,38px); font-weight:500; color:#eef2ff; line-height:1.15; margin:0 0 16px;">
         Thank you for reaching out
       </h1>
 
       <p style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:rgba(180,200,230,0.55); line-height:1.8; margin:0 0 40px;">
-        Your consultation request has been received. I will review your submission and get back to you within 24 hours with a proposed agenda for our call.
+        Your consultation request has been received. We will review your submission and get back to you within 24 hours with a proposed agenda for our call.
       </p>
 
       <a href="index.html" class="btn-primary">
