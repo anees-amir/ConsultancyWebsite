@@ -118,8 +118,10 @@
 
       <div class="cf-row">
         <div class="cf-field">
-          <label class="cf-label">Full name</label>
-          <input class="cf-input" type="text" name="full-name"  placeholder="Jane Smith"/>
+          <label class="cf-label">Full name*</label>
+          <input class="cf-input" type="text" name="full-name"  placeholder="Jane Smith" required 
+                oninvalid="this.setCustomValidity('Please enter your Name')"
+                oninput="this.setCustomValidity('')"/>
         </div>
         <div class="cf-field">
           <label class="cf-label">Work email</label>
