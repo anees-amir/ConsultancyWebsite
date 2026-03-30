@@ -127,7 +127,10 @@
         </div>
         <div class="cf-field">
           <label class="cf-label">Work email*</label>
-          <input class="cf-input" type="email" required name="email"  placeholder="jane@organisation.com"/>
+          <input class="cf-input" type="email" required 
+                oninvalid="this.setCustomValidity('Please enter your Name')"
+                 title="Please enter your Name"
+                oninput="this.setCustomValidity('')" name="email"  placeholder="jane@organisation.com"/>
         </div>
       </div>
 
