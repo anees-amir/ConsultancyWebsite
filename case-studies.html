@@ -234,7 +234,7 @@
         <span class="cs-flow-num">02</span>
         <div class="cs-flow-content">
           <h5>Training — 40 federated rounds</h5>
-          <p>Each round: local training on institution data → DP noise injection → gradient or inetermdeiate information upload to server → FedAvg aggregation → global model broadcast. No raw data left any institution at any point.</p>
+          <p>Each round: local training on institution data → DP noise injection → gradient or intermediate information upload to server → FedAvg aggregation → global model broadcast. No raw data left any institution at any point.</p>
         </div>
       </div>
       <div class="cs-flow-step">
@@ -313,8 +313,8 @@
       <h4>Data holders</h4>
       <ul>
         <li>Node 1: Imaging data of size 1.8 PB</li>
-        <li>Node 1: Imaging data of size 2.3 PB</li>
-        <li>Node 1: Imaging data of size 1.4 PB</li>
+        <li>Node 2: Imaging data of size 2.3 PB</li>
+        <li>Node 3: Imaging data of size 1.4 PB</li>
       </ul>
     </div>
 
@@ -344,7 +344,7 @@
   
   <!-- 04 · FL Assessment -->
   <div class="cs-section">
-    <div class="cs-label">04 · FL Assessment and Design</div>
+    <div class="cs-label">03 · FL Assessment and Design</div>
     <h2 class="cs-section-title">Technical configuration</h2>
 
     <div class="cs-assess">
@@ -386,7 +386,7 @@
 
   <!-- 05 · Implementation -->
   <div class="cs-section">
-    <div class="cs-label">05 · Implementation</div>
+    <div class="cs-label">04 · Implementation</div>
     <h2 class="cs-section-title">How it was built</h2>
     <div class="cs-flow">
       <div class="cs-flow-step">
@@ -417,7 +417,7 @@
 
   <!-- 06 · Outcomes -->
   <div class="cs-section">
-    <div class="cs-label">06 · Outcomes</div>
+    <div class="cs-label">05 · Outcomes</div>
     <h2 class="cs-section-title">Results across the three service pillars</h2>
     <p class="cs-body">
       The federated CNN matched the accuracy of a hypothetical centralised model trained on all data — without a single raw image leaving its institute of origin. Training that would have required 120+ days of data transfer was completed in under two weeks of federated rounds.
@@ -425,7 +425,7 @@
     <div class="cs-assess">
       <div class="cs-outcome">
         <span class="cs-outcome-num">94.2%</span>
-        <span class="cs-outcome-label">alaxy morphology classification accuracy — within 0.8% of a simulated centralised baseline</span>
+        <span class="cs-outcome-label">Galaxy morphology classification accuracy — within 0.8% of a simulated centralised baseline</span>
       </div>
       <div class="cs-outcome">
         <span class="cs-outcome-num">11 days</span>
@@ -492,7 +492,7 @@
     <!-- Left: Logo + Tagline -->
     <div style="max-width:260px;">
       <div class="logo" style="margin-bottom:16px;">
-        <img src="images/logo_2-cropped.svg" alt="FedPrivacy Logo" style="width:200px; height:100px;">
+        <img src="images/logo_2-cropped.svg" alt="AI Privacy Consultancy Logo" style="width:200px; height:100px;">
         
       </div>
       <p style="font-size:14px; line-height:1.6; color:var(--text-dim);">
