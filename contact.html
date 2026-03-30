@@ -288,5 +288,19 @@
     document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
   </script>
 
+  <script>
+  const form = document.querySelector('form[name="consultation"]');
+
+  form.addEventListener('submit', function () {
+    const formData = new FormData(form);
+    const data = {};
+
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    localStorage.setItem('consultationData', JSON.stringify(data));
+  });
+  </script>
 </body>
 </html>
