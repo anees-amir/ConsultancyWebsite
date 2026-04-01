@@ -621,6 +621,17 @@
   color:rgba(180,200,230,0.5); line-height:1.75; margin:0;
 }
 
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.75rem 2rem;
+}
+
+.logo-link img {
+  display: block;
+}
+
 /* background / timeline */
 .ab-timeline {
   padding:80px 48px;
