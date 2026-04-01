@@ -106,12 +106,11 @@
   <!-- RIGHT: FORM -->
 
   <form 
-    name="consultation" 
     method="POST" 
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-    action="/success.html"
+    action="https://formspree.io/f/xeepkyvp"
   >
+    <input type="hidden" name="_next" value="https://aiprivacyconsultancy.com.au/success.html">
+
     <div class="cf-form-wrap">
 
       <div class="cf-section-label">Your details</div>
@@ -341,19 +340,6 @@
     document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
   </script>
 
-  <script>
-  const form = document.querySelector('form[name="consultation"]');
-
-  form.addEventListener('submit', function () {
-    const formData = new FormData(form);
-    const data = {};
-
-    formData.forEach((value, key) => {
-      data[key] = value;
-    });
-
-    localStorage.setItem('consultationData', JSON.stringify(data));
-  });
-  </script>
+  
 </body>
 </html>
