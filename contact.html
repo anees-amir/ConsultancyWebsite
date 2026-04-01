@@ -106,11 +106,11 @@
   <!-- RIGHT: FORM -->
 
   <form 
-    method="POST" 
-    action="https://formspree.io/f/xeepkyvp"
-  >
-    <input type="hidden" name="_next" value="https://aiprivacyconsultancy.com.au/success.html">
-
+      id="consultationForm"
+      method="POST" 
+      action="https://formspree.io/f/xeepkyvp"
+    >
+  <input type="hidden" name="_captcha" value="false">
     <div class="cf-form-wrap">
 
       <div class="cf-section-label">Your details</div>
@@ -341,16 +341,36 @@
   </script>
 
   <script>
-  const form = document.querySelector('form');
+const form = document.getElementById('consultationForm');
 
-  form.addEventListener('submit', function () {
-    const formData = new FormData(form);
-    const data = {};
-    formData.forEach((value, key) => {
-      data[key] = value;
+form.addEventListener('submit', async function(e) {
+  e.preventDefault(); // prevent normal form submission
+
+  const formData = new FormData(form);
+  const data = {};
+  formData.forEach((value, key) => { data[key] = value });
+
+  // send to Formspree
+  const action = form.action;
+  try {
+    const response = await fetch(action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
     });
-    localStorage.setItem('consultationData', JSON.stringify(data));
-  });
+
+    if (response.ok) {
+      // save the data to sessionStorage (works across pages)
+      sessionStorage.setItem('consultationData', JSON.stringify(data));
+      // redirect to success page
+      window.location.href = 'success.html';
+    } else {
+      alert('Submission failed. Please try again.');
+    }
+  } catch (err) {
+    alert('Submission failed. Please check your connection.');
+  }
+});
 </script>
 
 </body>

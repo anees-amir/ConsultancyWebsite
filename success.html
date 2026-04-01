@@ -74,7 +74,9 @@ const labels = {
 };
 
 const container = document.getElementById('summary-fields');
-const data = JSON.parse(localStorage.getItem('consultationData') || '{}');
+const data = JSON.parse(sessionStorage.getItem('consultationData') || '{}');
+
+// populate submission summary (same as your current code)
 
 let hasData = false;
 
