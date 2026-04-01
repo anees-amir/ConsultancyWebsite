@@ -464,6 +464,83 @@
   color:rgba(255,107,43,0.7);
 }
 
+/* Container */
+.policy-container {
+  padding: 150px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Main Title */
+.policy-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(32px, 4vw, 42px);
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+/* Intro paragraph */
+.policy-intro {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+/* Section headings */
+.policy-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 500;
+  color: var(--text);
+  margin-top: 50px;
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+
+/* Body text */
+.policy-text {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+/* Lists */
+.policy-list {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.policy-list li {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+/* Bold labels */
+.policy-list strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Contact block */
+.policy-contact {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--text-dim);
+  margin-top: 10px;
+}
+
+/* Effective date */
+.policy-date {
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
 /* submit */
 .cf-submit {
   width:100%; margin-top:28px;
