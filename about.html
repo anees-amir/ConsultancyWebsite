@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261116b">
+  <link rel="stylesheet" href="style.css?v=634c59dc">
 </head>
 <body>
 
@@ -34,48 +34,56 @@
 
   <main>
 
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow">About</span>
-        <h1>A specialist, not a generalist.</h1>
+    <section class="about-hero">
+      <div class="container about-intro">
+        <img class="about-photo" src="images/amir-anees.jpg" alt="Dr Amir Anees" width="280" height="280">
+        <div>
+          <span class="eyebrow">About</span>
+          <h1>Dr Amir Anees</h1>
+          <p class="about-role">Federated learning &amp; privacy-preserving AI specialist</p>
+          <p class="lead">I help organisations get value from machine learning without compromising sensitive data, bridging academic research and real-world deployment.</p>
+          <div class="btn-row">
+            <a href="contact.html" class="btn btn-primary">Book a consultation <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://www.linkedin.com/company/aiprivacyconsultancy/about/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section style="padding-top:8px">
-      <div class="container about-grid">
-        <div class="prose">
-          <p>I'm Dr Amir Anees, a researcher and consultant specialising in federated learning and privacy-preserving AI. My work bridges academic research and real-world deployment, helping organisations get value from machine learning without compromising sensitive data.</p>
+    <section class="section-sand about-body">
+      <div class="container">
+        <div class="cred-strip reveal">
+          <div class="cred">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></div>
+            <h4>PhD, Cyber Security</h4>
+            <p>Doctoral research specialising in data security.</p>
+          </div>
+          <div class="cred">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="12" cy="21" r="1.5"/><path d="M6 7l4 3.5M18 7l-4 3.5M12 15v4.5"/></svg></div>
+            <h4>5 years in federated learning</h4>
+            <p>Designing, building and evaluating FL systems.</p>
+          </div>
+          <div class="cred">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M10 21v-6h4v6"/></svg></div>
+            <h4>Postdoctoral researcher, UNSW</h4>
+            <p>Active research on federated learning systems at UNSW Sydney.</p>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <div>
+          <span class="eyebrow">Background</span>
+          <h2>A specialist, not a generalist.</h2>
           <p>My PhD in cyber security focused on data security: how data is exposed, exploited and protected. That led me to federated learning, and I've worked exclusively in the field for the past five years.</p>
           <p>Alongside this consultancy I'm a postdoctoral researcher at UNSW, so the advice I bring is informed by current research, not just past projects.</p>
+          </div>
           <div class="callout">
             <p>You work directly with a specialist whose career is focused on this exact problem, with the academic rigour to back it up.</p>
           </div>
         </div>
-
-        <figure class="profile reveal">
-            <img src="images/amir-anees.jpg" alt="Dr Amir Anees" width="240" height="240">
-            <figcaption>
-              <strong>Dr Amir Anees</strong>
-              <span>Federated learning &amp; privacy-preserving AI</span>
-            </figcaption>
-        </figure>
-      </div>
-
-      <div class="container credentials">
-          <div class="card credential reveal">
-            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></div>
-            <div><h4>PhD, Cyber Security</h4><p>Doctoral research specialising in data security.</p></div>
-          </div>
-          <div class="card credential reveal">
-            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="12" cy="21" r="1.5"/><path d="M6 7l4 3.5M18 7l-4 3.5M12 15v4.5"/></svg></div>
-            <div><h4>5 years in federated learning</h4><p>Designing, building and evaluating FL systems across domains.</p></div>
-          </div>
-          <div class="card credential reveal">
-            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M10 21v-6h4v6"/></svg></div>
-            <div><h4>Postdoctoral researcher, UNSW</h4><p>Active research on federated learning systems at UNSW Sydney.</p></div>
-          </div>
       </div>
     </section>
+
 
     <section class="cta-section">
       <div class="container">
@@ -151,7 +159,7 @@
     </div>
   </footer>
 
-  <script src="main.js?v=20261116b"></script>
+  <script src="main.js?v={asset_version('main.js')}"></script>
 
 </body>
 </html>
