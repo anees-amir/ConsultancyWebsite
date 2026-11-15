@@ -407,6 +407,18 @@ section { padding: 96px 0; }
 .credential .icon-badge { margin-bottom: 0; flex-shrink: 0; }
 .credential p { font-size: 15px; color: var(--muted); margin-top: 2px; }
 
+.profile {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.profile img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.profile figcaption { padding: 18px 22px; }
+.profile strong { display: block; font-family: var(--font-head); font-size: 19px; color: var(--ink); }
+.profile span { font-size: 14px; color: var(--muted); }
+
 .callout {
   margin-top: 40px;
   padding: 28px 32px;
@@ -590,6 +602,8 @@ section { padding: 96px 0; }
 
 @media (max-width: 880px) {
   section { padding: 72px 0; }
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-grid .credentials { max-width: 420px; }
   .nav-toggle { display: inline-flex; }
   .nav-links {
     display: none;
@@ -610,7 +624,7 @@ section { padding: 96px 0; }
   .nav-links .btn { margin: 8px 0 0; justify-content: center; }
 
   .hero { padding: 56px 0 72px; }
-  .hero-grid, .about-grid, .contact-grid,
+  .hero-grid, .contact-grid,
   .service-block, .tech-group, .case-body { grid-template-columns: 1fr; gap: 32px; }
   .fl-diagram { margin: 0 auto; max-width: 380px; }
   .grid-3 { grid-template-columns: 1fr; }
