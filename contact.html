@@ -3,401 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Privacy: Book Consultation</title>
-  <link rel="icon" type="image/png" href="images/logo_title.svg">
+  <title>Book a Consultation | AI Privacy Consultancy</title>
+  <meta name="description" content="Tell us about your data and goals. We'll respond within 24 hours.">
+  <link rel="icon" type="image/svg+xml" href="images/logo_title.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
-<!-- ########################################################## -->
-
 <body>
 
-  <nav>
-    <a href="index.html" class="logo">
-      <img src="images/logo.svg" alt="AI Privacy Consultancy Logo" class="logo-img">
-    </a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="technologies.html">Technologies</a></li>
-      <li><a href="case-studies.html">Case Studies</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="nav-cta">Book Consultation</a></li>
-    </ul>
-  </nav>
-
-
- <!-- ########################################################## -->
-
- <section style="background:rgba(0,212,255,0.02);">
-<div class="cf-wrap">
-
-  <!-- LEFT -->
-  <div class="cf-left">
-
-    <div class="hero-badge">
-      <span class="pulse-dot"></span>
-      Book a Consultation
-    </div>
-
-
-    <h1>
-      Let's assess your
-      <span class="orange-text" style="display:block;">
-        FL readiness
-      </span>
-    </h1>
-
-    <p style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:rgba(180,200,230,0.55); line-height:1.75; max-width:480px; margin:0;">
-      Tell us about your data, your organisation and your goals. We'll come prepared with a clear view of whether federated learning is the right fit — and what it would take to get there.
-    </p>
-
-    <div class="cf-trust">
-
-      <div class="cf-trust-item">
-        <div class="cf-trust-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <circle cx="8" cy="8" r="6.5" stroke="rgba(0,212,255,0.6)" stroke-width="1"/>
-            <path d="M5 8l2 2 4-4" stroke="rgba(0,212,255,0.6)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div>
-          <span class="cf-trust-title">Response within 24 hours</span>
-          <span class="cf-trust-desc">We review every submission personally and respond with a proposed agenda before the call.</span>
-        </div>
-      </div>
-
-      <div class="cf-trust-item">
-        <div class="cf-trust-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <rect x="3" y="7" width="6" height="7" rx="1" stroke="rgba(0,212,255,0.6)" stroke-width="1"/>
-            <path d="M4.5 7V5a3.5 3.5 0 0 1 7 0v2" stroke="rgba(0,212,255,0.6)" stroke-width="1" stroke-linecap="round"/>
-            <circle cx="11" cy="11" r="3" fill="#0a0f1e" stroke="rgba(0,212,255,0.6)" stroke-width="1"/>
-            <path d="M11 10v1.5" stroke="rgba(0,212,255,0.6)" stroke-width="1" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div>
-          <span class="cf-trust-title">No commitment required</span>
-          <span class="cf-trust-desc">The initial consultation is exploratory. There is no obligation to proceed beyond it.</span>
-        </div>
-      </div>
-
-      <div class="cf-trust-item">
-        <div class="cf-trust-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <rect x="2" y="4" width="12" height="9" rx="1.5" stroke="rgba(0,212,255,0.6)" stroke-width="1"/>
-            <path d="M5 4V3a3 3 0 0 1 6 0v1" stroke="rgba(0,212,255,0.6)" stroke-width="1" stroke-linecap="round"/>
-            <line x1="5" y1="8.5" x2="11" y2="8.5" stroke="rgba(0,212,255,0.6)" stroke-width="0.8"/>
-            <line x1="5" y1="10.5" x2="8"  y2="10.5" stroke="rgba(0,212,255,0.6)" stroke-width="0.8"/>
-          </svg>
-        </div>
-        <div>
-          <span class="cf-trust-title">Privacy Compliant process</span>
-          <span class="cf-trust-desc">Your submission is handled under our data processing agreement. No data is shared with third parties.</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- RIGHT: FORM -->
-
-  <form 
-      id="consultationForm"
-      method="POST" 
-      action="https://formspree.io/f/xeepkyvp"
-    >
-  <input type="hidden" name="_captcha" value="false">
-    <div class="cf-form-wrap">
-
-      <div class="cf-section-label">Your details</div>
-
-      <div class="cf-row">
-        <div class="cf-field">
-          <label class="cf-label">Full name*</label>
-          <input class="cf-input" 
-                  type="text" name="full-name"  placeholder="Jane Smith" required 
-                oninvalid="this.setCustomValidity('Please enter your Name')"
-                 title="Please enter your Name"
-                oninput="this.setCustomValidity('')"/>
-        </div>
-        <div class="cf-field">
-          <label class="cf-label">Work email*</label>
-          <input class="cf-input" type="email" required 
-                oninvalid="this.setCustomValidity('Please enter your Name')"
-                 title="Please enter your Name"
-                oninput="this.setCustomValidity('')" name="email"  placeholder="jane@organisation.com"/>
-        </div>
-      </div>
-
-      <div class="cf-row">
-        <div class="cf-field">
-          <label class="cf-label">Organisation</label>
-          <input class="cf-input" type="text" name="organisation" placeholder="Organisation name"/>
-        </div>
-        <div class="cf-field">
-          <label class="cf-label">Job title</label>
-          <input class="cf-input" type="text" name="job-title" placeholder="e.g. Head of Data Science"/>
-        </div>
-      </div>
-
-      <div class="cf-row">
-        <div class="cf-field">
-          <label class="cf-label">Country</label>
-          <select class="cf-select" name="country">
-            <option value="" disabled selected>Select country</option>
-            <option>Australia</option>
-            <option>France</option>
-            <option>Germany</option>
-            <option>Netherlands</option>
-            <option>United States</option>
-            <option>United Kingdom</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="cf-field">
-          <label class="cf-label">Industry</label>
-          <select class="cf-select" name="industry">
-            <option value="" disabled selected>Select industry</option>
-            <option>Banking &amp; Finance</option>
-            <option>Healthcare</option>
-            <option>Research &amp; Academia</option>
-            <option>Government</option>
-            <option>Telecommunications</option>
-            <option>Insurance</option>
-            <option>Other</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="cf-section-label">Your use case</div>
-
-      <div class="cf-row full">
-        <div class="cf-field">
-          <label class="cf-label">Service of interest</label>
-          <div class="cf-pills">
-            <input class="cf-pill-input" type="radio" name="service" value="FL Readiness Assessment" id="s1"/>
-            <label class="cf-pill-label" for="s1">FL Readiness Assessment</label>
-            <input class="cf-pill-input" type="radio" name="service" value="FL System Design" id="s2"/>
-            <label class="cf-pill-label" for="s2">FL System Design</label>
-            <input class="cf-pill-input" type="radio" name="service" value="Deployment & Support" id="s3"/>
-            <label class="cf-pill-label" for="s3">Deployment &amp; Support</label>
-            <input class="cf-pill-input" type="radio" name="service" value="Not sure yet" id="s4"/>
-            <label class="cf-pill-label" for="s4">Not sure yet</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="cf-row full" style="margin-top:16px;">
-        <div class="cf-field">
-          <label class="cf-label">Approximate dataset size</label>
-          <div class="cf-pills">
-
-
-            
-            
-            
-            
-            
-
-
-            <input class="cf-pill-input" type="radio" name="size" value=" < 1 GB" id="d1"/>
-            <label class="cf-pill-label" for="d1">&lt; 1 GB</label>
-            <input class="cf-pill-input" type="radio" name="size" value="1 GB – 1 TB" id="d2"/>
-            <label class="cf-pill-label" for="d2">1 GB – 1 TB</label>
-            <input class="cf-pill-input" type="radio" name="size" value="1 TB – 1 PB" id="d3"/>
-            <label class="cf-pill-label" for="d3">1 TB – 1 PB</label>
-            <input class="cf-pill-input" type="radio" name="size" value="> 1 PB" id="d4"/>
-            <label class="cf-pill-label" for="d4">&gt; 1 PB</label>
-            <input class="cf-pill-input" type="radio" name="size" value="Unknown" id="d5"/>
-            <label class="cf-pill-label" for="d5">Unknown</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="cf-row full" style="margin-top:16px;">
-        <div class="cf-field">
-          <label class="cf-label">Describe your use case</label>
-          <textarea class="cf-textarea" name="use-case" placeholder="Briefly describe your data, the problem you are trying to solve, and any privacy or regulatory constraints you are working under..."></textarea>
-        </div>
-      </div>
-
-      <div class="cf-section-label">Logistics</div>
-
-      <div class="cf-row">
-        <div class="cf-field">
-          <label class="cf-label">Preferred contact method</label>
-          <select class="cf-select" name="contact-method">
-            <option value="" disabled selected>Select preference</option>
-            <option>Email</option>
-            <option>Video call</option>
-          </select>
-        </div>
-        <div class="cf-field">
-          <label class="cf-label">How did you hear about us</label>
-          <select class="cf-select" name="how-did-you-hear">
-            <option value="" disabled selected>Select source</option>
-            <option>LinkedIn</option>
-            <option>Web search</option>
-            <option>Conference or event</option>
-            <option>Referral</option>
-            <option>Other</option>
-          </select>
-        </div>
-      </div>
-
-      <button type="submit" class="cf-submit">
-        Submit consultation request
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-logo" aria-label="AI Privacy Consultancy home">
+        <img src="images/logo.svg" alt="AI Privacy Consultancy" width="182" height="70">
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
-
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Book a consultation</a></li>
+      </ul>
     </div>
-  </form>
+  </header>
 
-</div>
-</section>
+  <main>
 
- <!-- ########################################################## -->
+    <section>
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Book a consultation</span>
+          <h1>Let's talk about your data.</h1>
+          <p class="lead">Tell us about your organisation and goals. We'll come prepared with a clear view of whether federated learning is the right fit.</p>
+          <ul class="trust-list">
+            <li>
+              <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <div><strong>Reply within 24 hours</strong><span>With a proposed agenda for the call.</span></div>
+            </li>
+            <li>
+              <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
+              <div><strong>No commitment</strong><span>The first consultation is exploratory.</span></div>
+            </li>
+            <li>
+              <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+              <div><strong>Your details stay private</strong><span>Never shared with third parties.</span></div>
+            </li>
+          </ul>
+          <div class="contact-direct">
+            <span>Prefer email? <a href="mailto:support@aiprivacyconsultancy.com.au">support@aiprivacyconsultancy.com.au</a></span>
+            <span>Or call <a href="tel:+61469745854">+61 469 745 854</a></span>
+          </div>
+        </div>
 
-<footer style="padding:5px 48px 10px; border-top:1px solid var(--border); background:var(--navy);">
-
-  <!-- Three Column Row -->
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:200px; margin-bottom:40px; align-items:start;">
-
-    <!-- Column 1: Logo + Tagline -->
-    <div style="padding-top: 10px;">
-      <div style="margin-bottom:16px;">
-        <img src="images/logo.svg" alt="AI Privacy Consultancy Logo" style="width:200px; height:100px;">
+        <form class="form-card" id="consultationForm" method="POST" action="https://formspree.io/f/xeepkyvp">
+          <div class="form-row">
+            <div class="field">
+              <label for="full-name">Full name <span class="req">*</span></label>
+              <input class="input" id="full-name" name="full-name" type="text" autocomplete="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="field">
+              <label for="email">Work email <span class="req">*</span></label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="jane@organisation.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="organisation">Organisation</label>
+              <input class="input" id="organisation" name="organisation" type="text" autocomplete="organization" placeholder="Organisation name">
+            </div>
+            <div class="field">
+              <label for="industry">Industry</label>
+              <select class="select" id="industry" name="industry">
+                <option value="">Select industry</option>
+                  <option>Banking &amp; finance</option>
+                  <option>Healthcare</option>
+                  <option>Insurance</option>
+                  <option>Government</option>
+                  <option>Telecommunications</option>
+                  <option>Research &amp; academia</option>
+                  <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <span class="label" id="service-label">What are you interested in?</span>
+            <div class="pills" role="radiogroup" aria-labelledby="service-label">
+                <label class="pill"><input type="radio" name="service" value="Readiness assessment"><span>Readiness assessment</span></label>
+                <label class="pill"><input type="radio" name="service" value="System design"><span>System design</span></label>
+                <label class="pill"><input type="radio" name="service" value="Deployment & support"><span>Deployment &amp; support</span></label>
+                <label class="pill"><input type="radio" name="service" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="use-case">Tell us about your use case</label>
+            <textarea class="textarea" id="use-case" name="use-case" placeholder="Your data, the problem you're solving, and any privacy or regulatory constraints."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send request <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <p class="form-error" id="formError" role="alert">Something went wrong. Please try again, or email us directly.</p>
+          <p class="form-note">By submitting, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+        </form>
       </div>
-      <p style="font-size:14px; line-height:1.6; color:var(--text-dim);">
-        AI Privacy consultancy specialising in federated learning systems for real-world deployment.
-      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo_footer.svg" alt="AI Privacy Consultancy" width="182" height="70">
+          <p>Federated learning and privacy-preserving AI, designed for real-world deployment.</p>
+          <div class="social">
+            <a href="https://www.linkedin.com/company/aiprivacyconsultancy/about/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/people/AIPrivacyConsultancy/61576410366729/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.53l.38-2.93H13.5V8.7c0-.85.24-1.43 1.45-1.43h1.55V4.65a20.6 20.6 0 0 0-2.26-.12c-2.24 0-3.77 1.37-3.77 3.88v2.16H7.94v2.93h2.53V21h3.03z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Book a consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+              <a href="mailto:support@aiprivacyconsultancy.com.au">support@aiprivacyconsultancy.com.au</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+61469745854">+61 469 745 854</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <span>Canberra, Australia</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg>
+              <span>ABN 71 374 034 233</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 AI Privacy Consultancy. All rights reserved.</span>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </nav>
+      </div>
     </div>
+  </footer>
 
-    <!-- Column 2: Social + Policy Buttons -->
-
-    <div style="font-size:14px; padding-top: 50px; color:var(--text-dim); display:flex; flex-direction:column; gap:10px;">
-
-      <div style="display:flex; align-items:center; gap:8px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-          <circle cx="12" cy="9" r="2.5"/>
-        </svg>
-        <span>Canberra, Australia</span>
-      </div>
-
-      <div style="display:flex; align-items:center; gap:8px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="4" width="20" height="16" rx="2"/>
-          <polyline points="2,4 12,13 22,4"/>
-        </svg>
-        <a href="mailto:support@aiprivacyconsultancy.com.au" style="color:var(--text-dim); text-decoration:none;">support@aiprivacyconsultancy.com.au</a>
-      </div>
-
-      <div style="display:flex; align-items:center; gap:8px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-        </svg>
-        <a href="tel:+61469745854" style="color:var(--text-dim); text-decoration:none;">+61 469 745 854</a>
-      </div>
-
-      <div style="border-top:1px solid var(--border); margin:4px 0;"></div>
-
-      <div style="display:flex; align-items:center; gap:8px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="4" width="18" height="16" rx="2"/>
-          <line x1="7" y1="9" x2="17" y2="9"/>
-          <line x1="7" y1="13" x2="13" y2="13"/>
-        </svg>
-        <span>ABN: 71 374 034 233</span>
-      </div>
-
-    </div>
-
-    <!-- Column 3: Contact Info -->
-
-    <div style="display:flex; padding-top: 120px; flex-direction:column; gap:16px; align-items:flex-end;">
-
-      <div style="display:flex; gap:14px;">
-        <a href="https://www.linkedin.com/company/aiprivacyconsultancy/about/" target="_blank">
-          <img src="images/linkedin.svg" alt="LinkedIn" style="width:20px;">
-        </a>
-        <a href="https://www.facebook.com/people/AIPrivacyConsultancy/61576410366729/" target="_blank">
-          <img src="images/facebook.svg" alt="Facebook" style="width:20px;">
-        </a>
-      </div>
-
-      <div style="display:flex; flex-direction:row; gap:10px;">
-        <a href="privacy.html" style="font-size:13px; width:140px; text-align:center; padding:8px 14px; border:1px solid var(--border); border-radius:6px; text-decoration:none; color:var(--text-dim); transition:all 0.2s; display:inline-block;">
-          Privacy Policy
-        </a>
-        <a href="terms.html" style="font-size:13px; width:140px; text-align:center; padding:8px 14px; border:1px solid var(--border); border-radius:6px; text-decoration:none; color:var(--text-dim); transition:all 0.2s; display:inline-block;">
-          Terms & Conditions
-        </a>
-      </div>
-
-    </div>
-    
-
-  </div>
-
-  <!-- Bottom Bar: Copyright -->
-  <div style="border-top:1px solid var(--border); padding-top:24px;">
-    <span style="font-size:13px; color:var(--text-dim);">© 2026 AIPrivacyConsultancy. All rights reserved.</span>
-  </div>
-
-</footer>
-
-<!-- ########################################################## -->
-
-
+  <script src="main.js"></script>
 
   <script>
-    const obs = new IntersectionObserver(
-      entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')),
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
-  </script>
+    const form = document.getElementById('consultationForm');
+    const error = document.getElementById('formError');
 
-  <script>
-const form = document.getElementById('consultationForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const button = form.querySelector('button[type="submit"]');
+      const formData = new FormData(form);
+      button.disabled = true;
+      error.classList.remove('show');
 
-form.addEventListener('submit', async function(e) {
-  e.preventDefault(); // prevent normal form submission
-
-  const formData = new FormData(form);
-  const data = {};
-  formData.forEach((value, key) => { data[key] = value });
-
-  // send to Formspree
-  const action = form.action;
-  try {
-    const response = await fetch(action, {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: formData
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: formData
+        });
+        if (!response.ok) throw new Error('Submission failed');
+        try { sessionStorage.setItem('consultationData', JSON.stringify(Object.fromEntries(formData))); } catch (_) {}
+        window.location.href = 'success.html';
+      } catch (err) {
+        error.classList.add('show');
+        button.disabled = false;
+      }
     });
-
-    if (response.ok) {
-      // save the data to sessionStorage (works across pages)
-      sessionStorage.setItem('consultationData', JSON.stringify(data));
-      // redirect to success page
-      window.location.href = 'success.html';
-    } else {
-      alert('Submission failed. Please try again.');
-    }
-  } catch (err) {
-    alert('Submission failed. Please check your connection.');
-  }
-});
-</script>
+  </script>
 
 </body>
 </html>

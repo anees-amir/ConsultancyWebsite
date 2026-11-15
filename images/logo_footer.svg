@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="62 45 182 70" width="182" height="70">
+  <circle cx="80" cy="52" r="7" fill="#BA7517"/>
+  <line x1="80" y1="59" x2="80" y2="75" stroke="#85B7EB" stroke-width="1" stroke-dasharray="3 4"/>
+  <circle cx="80" cy="94" r="18" fill="#185FA5"/>
+  <path d="M74 94 L74 87 Q74 81 80 81 Q86 81 86 87 L86 94" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="72" y="93" width="16" height="11" rx="3" fill="white"/>
+  <circle cx="80" cy="98" r="2" fill="#185FA5"/>
+  <rect x="79" y="98" width="2" height="3" rx="1" fill="#185FA5"/>
+  <text x="116" y="90" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="0.5"><tspan fill="#BA7517">AI</tspan><tspan fill="#85B7EB">Privacy</tspan></text>
+  <text x="117" y="110" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="4" fill="#B8C1CF">CONSULTANCY</text>
+</svg>

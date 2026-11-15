@@ -3,423 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Privacy: Services</title>
-  <link rel="icon" type="image/png" href="images/logo_title.svg">
+  <title>Services | AI Privacy Consultancy</title>
+  <meta name="description" content="Federated learning readiness assessments, system design, and deployment support.">
+  <link rel="icon" type="image/svg+xml" href="images/logo_title.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
-<!-- ########################################################## -->
-
 <body>
 
-  <nav>
-    <a href="index.html" class="logo">
-      <img src="images/logo.svg" alt="AI Privacy Consultancy Logo" class="logo-img">
-    </a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="technologies.html">Technologies</a></li>
-      <li><a href="case-studies.html">Case Studies</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="nav-cta">Book Consultation</a></li>
-    </ul>
-  </nav>
-
- <!-- ########################################################## -->
-
-<section style="min-height:50vh; display:flex; align-items:center; justify-content:space-between; padding:120px 48px 80px; gap:60px;">
-
-  <!-- LEFT -->
-  <div style="max-width:680px; position:relative; z-index:2;">
-    <div class="hero-badge">
-      <span class="pulse-dot"></span>
-      Our Services
-    </div>
-
-    <h1>
-      From strategy to deployment,
-      <span class="orange-text" style="display:block;">
-        we build privacy-preserving AI systems
-      </span>
-    </h1>
-  </div>
-
-  <!-- RIGHT: PIPELINE -->
-  <div class="pipeline">
-    <div class="pipeline-line"></div>
-    <div class="pipeline-pulse"></div>
-
-    <div class="pipeline-step" style="left:0%;">
-      <span>Assess</span>
-    </div>
-
-    <div class="pipeline-step" style="left:50%;">
-      <span>Design</span>
-    </div>
-
-    <div class="pipeline-step" style="left:100%;">
-      <span>Deploy</span>
-    </div>
-  </div>
-
-</section>
-
-    <hr>
-
- <!-- ########################################################## -->
-
- <section id="readiness" style="padding:30px 48px; background:rgba(0,212,255,0.03);">
-
-  <!-- Section Heading -->
-  <div style="max-width:720px; margin:0 auto 60px; text-align:center;">
-    <div class="hero-badge">
-      <span class="pulse-dot"></span>
-      FL Readiness Assessment
-    </div>
-
-    <h2>
-      Assess your data, infrastructure and workflows for FL
-    </h2>
-
-    <p style="font-size:18px; max-width:600px; margin:16px auto 0;">
-      We evaluate your organization's readiness to implement privacy-preserving AI solutions, ensuring that FL deployment is practical, compliant and effective.
-    </p>
-  </div>
-
-  <!-- Phases -->
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:32px; max-width:1200px; margin:0 auto;">
-    
-    <!-- Phase 1 -->
-    <div class="service-card fade-up stagger-1">
-      <div class="service-num">01</div>
-      <h3>
-        <span class="orange-text" style="display:block;">
-          Problem &amp; Data Discovery
-        </span>
-      </h3>
-      <ul style="margin:16px 0; padding-left:18px;">
-        <li>Stakeholder interviews to identify goals</li>
-        <li>Define potential ML use cases</li>
-        <li>Map data sources across departments (images, tabular, text)</li>
-        <li>Analyse data partitioning (horizontal/vertical/combined)</li>
-        <li>Assess number and role of participating entities</li>
-      </ul>
-      <p><strong>Output:</strong> Use case definition & data landscape report</p>
-    </div>
-
-    <!-- Phase 2 -->
-    <div class="service-card fade-up stagger-2">
-      <div class="service-num">02</div>
-      <h3>
-        <span class="orange-text" style="display:block;">
-          FL Feasibility Analysis
-        </span>
-      </h3>
-      <ul style="margin:16px 0; padding-left:18px;">
-        <li>Analyse data distribution & heterogeneity</li>
-        <li>Assess label imbalance impact on model</li>
-        <li>Evaluate communication & network constraints</li>
-        <li>Review available training infrastructure</li>
-        <li>Identify privacy & security requirements</li>
-      </ul>
-      <p><strong>Output:</strong> FL feasibility assessment report</p>
-    </div>
-
-    <!-- Phase 3 -->
-    <div class="service-card fade-up stagger-3">
-      <div class="service-num">03</div>
-      <h3>
-        <span class="orange-text" style="display:block;">
-          Privacy &amp; Security Strategy
-        </span>
-      </h3>
-      <ul style="margin:16px 0; padding-left:18px;">
-        <li>Evaluate privacy-preserving techniques such as Differential Privacy, Homomorphic Encryption etc</li>
-        <li>Identify regulatory & compliance constraints</li>
-        <li>Recommend privacy-preserving strategies</li>
-      </ul>
-      <p><strong>Output:</strong> Privacy architecture recommendation</p>
-    </div>
-
-  </div>
-
-</section>
-
-<hr>
-
- <!-- ########################################################## -->
-
-<section id="design" style="padding:30px 48px; background:rgba(0,212,255,0.03);">
-
-  <!-- Section Heading -->
-  <div style="max-width:720px; margin:0 auto 60px; text-align:center;">
-    <div class="hero-badge">
-      <span class="pulse-dot"></span>
-      FL System Design
-    </div>
-
-    <h2>
-      Architect and plan your FL system
-    </h2>
-
-    <p style="font-size:18px; max-width:600px; margin:16px auto 0;">
-      We translate assessment findings into a concrete technical blueprint and actionable deployment plan tailored to your organisation.
-    </p>
-  </div>
-
-  <!-- Phases -->
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:32px; max-width:1200px; margin:0 auto;">
-
-    <!-- Phase 1 -->
-    <div class="service-card fade-up stagger-1">
-      <div class="service-num">01</div>
-      <h3>
-        <span class="orange-text" style="display:block;">
-          System Architecture Design
-        </span>
-      </h3>
-      <ul style="margin:16px 0; padding-left:18px;">
-        <li>Define training architecture (centralised coordinator vs decentralised)</li>
-        <li>Select appropriate ML models</li>
-        <li>Design communication protocols between participants</li>
-        <li>Define aggregation strategies (e.g., FedAvg, secure aggregation)</li>
-      </ul>
-      <p><strong>Output:</strong> FL architecture blueprint</p>
-    </div>
-
-    <!-- Phase 2 -->
-    <div class="service-card fade-up stagger-2">
-      <div class="service-num">02</div>
-      <h3>
-        <span class="orange-text" style="display:block;">
-          Implementation Roadmap
-        </span>
-      </h3>
-      <ul style="margin:16px 0; padding-left:18px;">
-        <li>Develop a project timeline with milestones</li>
-        <li>Estimate required resources (compute, personnel)</li>
-        <li>Provide cost estimates</li>
-        <li>Recommend technology stack (frameworks, tools, platforms)</li>
-      </ul>
-      <p><strong>Output:</strong> FL deployment roadmap</p>
-    </div>
-
-  </div>
-
-</section>
-
-<hr>
-
-<!-- ########################################################## -->
-
-<section id="deployment" style="padding:30px 48px; background:rgba(0,212,255,0.03);">
-
-  <!-- Section Heading -->
-  <div style="max-width:720px; margin:0 auto 60px; text-align:center;">
-    <div class="hero-badge">
-      <span class="pulse-dot"></span>
-      FL Deployment & Support
-    </div>
-
-    <h2>
-      Full implementation and operational support
-    </h2>
-
-    <p style="font-size:18px; max-width:600px; margin:16px auto 0;">
-      Subject to organisational needs and approvals, the consultancy can extend to full implementation support — from framework setup through to ongoing operations.
-    </p>
-  </div>
-
-  <!-- Cards -->
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:32px; max-width:1200px; margin:0 auto;">
-
-    <!-- Services Provided -->
-    <div class="service-card fade-up stagger-1">
-      <div class="service-num">01</div>
-      <h3>
-        <span class="orange-text" style="display:block;">
-          Implementation Details
-        </span>
-      </h3>
-      <ul style="margin:16px 0; padding-left:18px;">
-        <li>Setup and configuration of FL frameworks (e.g., TensorFlow Federated, PySyft, Flower)</li>
-        <li>Development of ML models tailored to the use case</li>
-        <li>Integration with existing data infrastructure</li>
-        <li>Implementation of privacy-preserving techniques</li>
-        <li>Deployment of communication and aggregation pipelines</li>
-        <li>Testing, validation and performance optimisation</li>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-logo" aria-label="AI Privacy Consultancy home">
+        <img src="images/logo.svg" alt="AI Privacy Consultancy" width="182" height="70">
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Book a consultation</a></li>
       </ul>
     </div>
+  </header>
 
-    <!-- Operational Support -->
-    <div class="service-card fade-up stagger-2">
-      <div class="service-num">02</div>
-      <h3>
-        <span class="orange-text" style="display:block;">
-          Operational Support
-        </span>
-      </h3>
-      <ul style="margin:16px 0; padding-left:18px;">
-        <li>Monitoring and maintenance of FL systems</li>
-        <li>Debugging and performance tuning</li>
-        <li>Documentation and knowledge transfer</li>
-        <li>Training workshops for internal teams</li>
-      </ul>
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Services</span>
+        <h1>From strategy to deployment.</h1>
+        <p class="lead">Three stages, each useful on its own. Start where you are.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:24px">
+      <div class="container">
+        <div class="service-block reveal">
+          <div>
+            <div class="icon-badge">01</div>
+            <span class="eyebrow">Readiness assessment</span>
+            <h2>Is federated learning right for you?</h2>
+            <p class="summary">We evaluate whether FL is practical, compliant and effective for your organisation before you invest.</p>
+          </div>
+          <div>
+            <ul class="check-list">
+              <li>Use-case discovery and stakeholder interviews</li>
+              <li>Map data sources and partitioning (horizontal, vertical or combined)</li>
+              <li>Feasibility: data heterogeneity, network and infrastructure</li>
+              <li>Privacy, security and regulatory requirements</li>
+            </ul>
+            <div class="deliverables">
+              <span class="chip">Feasibility report</span>
+              <span class="chip">Privacy recommendation</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-block reveal">
+          <div>
+            <div class="icon-badge">02</div>
+            <span class="eyebrow">System design</span>
+            <h2>A blueprint you can build.</h2>
+            <p class="summary">We turn the assessment into a concrete technical architecture and an actionable plan.</p>
+          </div>
+          <div>
+            <ul class="check-list">
+              <li>Architecture: central coordinator or decentralised</li>
+              <li>Model selection and aggregation strategy (e.g. FedAvg, secure aggregation)</li>
+              <li>Roadmap with milestones, resources and cost estimates</li>
+              <li>Recommended frameworks, tools and platforms</li>
+            </ul>
+            <div class="deliverables">
+              <span class="chip">Architecture blueprint</span>
+              <span class="chip">Deployment roadmap</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-block reveal">
+          <div>
+            <div class="icon-badge">03</div>
+            <span class="eyebrow">Deployment &amp; support</span>
+            <h2>From framework to production.</h2>
+            <p class="summary">Where you need it, we take the design through to a working, supported system.</p>
+          </div>
+          <div>
+            <ul class="check-list">
+              <li>Framework setup (e.g. Flower, TensorFlow Federated, PySyft)</li>
+              <li>Model development and integration with your infrastructure</li>
+              <li>Privacy techniques, testing and performance tuning</li>
+              <li>Monitoring, documentation and team training</li>
+            </ul>
+            <div class="deliverables">
+              <span class="chip">Production FL system</span>
+              <span class="chip">Knowledge transfer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Start your journey toward privacy-preserving AI</h2>
+          <p>Whether you're exploring federated learning or ready to deploy, we'll help you assess, design and build the right solution.</p>
+          <div class="btn-row">
+            <a href="contact.html" class="btn btn-light">Book a consultation <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo_footer.svg" alt="AI Privacy Consultancy" width="182" height="70">
+          <p>Federated learning and privacy-preserving AI, designed for real-world deployment.</p>
+          <div class="social">
+            <a href="https://www.linkedin.com/company/aiprivacyconsultancy/about/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/people/AIPrivacyConsultancy/61576410366729/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.53l.38-2.93H13.5V8.7c0-.85.24-1.43 1.45-1.43h1.55V4.65a20.6 20.6 0 0 0-2.26-.12c-2.24 0-3.77 1.37-3.77 3.88v2.16H7.94v2.93h2.53V21h3.03z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Book a consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+              <a href="mailto:support@aiprivacyconsultancy.com.au">support@aiprivacyconsultancy.com.au</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+61469745854">+61 469 745 854</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <span>Canberra, Australia</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg>
+              <span>ABN 71 374 034 233</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 AI Privacy Consultancy. All rights reserved.</span>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </nav>
+      </div>
     </div>
+  </footer>
 
-  </div>
-
-</section>
-
-<hr>
-
-<!-- ########################################################## -->
-
-<section style="padding:50px 48px; display:flex; justify-content:center; align-items:center;">
-  
-  <div style="position:relative; max-width:900px; width:100%; text-align:center; padding:80px 48px; border:1px solid var(--border); background:var(--navy-2); overflow:hidden;">
-    
-    <!-- Subtle glow background -->
-    <div class="glow-orb" style="width:600px; height:300px; top:50%; left:50%; transform:translate(-50%, -50%); opacity:0.6;"></div>
-
-    <!-- Content -->
-    <div style="position:relative; z-index:2;">
-      
-      <span class="section-label">Get Started</span>
-      
-      <h2 style="max-width:640px; margin:0 auto 24px;">
-        Start your journey toward privacy-preserving AI
-      </h2>
-      
-      <p style="max-width:520px; margin:0 auto 40px; font-size:17px;">
-        Whether you're exploring FL or ready to deploy, we can help you assess, design and implement the right solution for your organisation.
-      </p>
-
-      <!-- CTA Buttons -->
-      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-        
-        <a href="contact.html" class="btn-primary">
-          Book a consultation
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
- 
- <!-- ########################################################## -->
-
-<footer style="padding:5px 48px 10px; border-top:1px solid var(--border); background:var(--navy);">
-
-  <!-- Three Column Row -->
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:200px; margin-bottom:40px; align-items:start;">
-
-    <!-- Column 1: Logo + Tagline -->
-    <div style="padding-top: 10px;">
-      <div style="margin-bottom:16px;">
-        <img src="images/logo.svg" alt="AI Privacy Consultancy Logo" style="width:200px; height:100px;">
-      </div>
-      <p style="font-size:14px; line-height:1.6; color:var(--text-dim);">
-        AI Privacy consultancy specialising in federated learning systems for real-world deployment.
-      </p>
-    </div>
-
-    <!-- Column 2: Social + Policy Buttons -->
-
-    <div style="font-size:14px; padding-top: 50px; color:var(--text-dim); display:flex; flex-direction:column; gap:10px;">
-
-      <div style="display:flex; align-items:center; gap:8px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-          <circle cx="12" cy="9" r="2.5"/>
-        </svg>
-        <span>Canberra, Australia</span>
-      </div>
-
-      <div style="display:flex; align-items:center; gap:8px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="4" width="20" height="16" rx="2"/>
-          <polyline points="2,4 12,13 22,4"/>
-        </svg>
-        <a href="mailto:support@aiprivacyconsultancy.com.au" style="color:var(--text-dim); text-decoration:none;">support@aiprivacyconsultancy.com.au</a>
-      </div>
-
-      <div style="display:flex; align-items:center; gap:8px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-        </svg>
-        <a href="tel:+61469745854" style="color:var(--text-dim); text-decoration:none;">+61 469 745 854</a>
-      </div>
-
-      <div style="border-top:1px solid var(--border); margin:4px 0;"></div>
-
-      <div style="display:flex; align-items:center; gap:8px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="4" width="18" height="16" rx="2"/>
-          <line x1="7" y1="9" x2="17" y2="9"/>
-          <line x1="7" y1="13" x2="13" y2="13"/>
-        </svg>
-        <span>ABN: 71 374 034 233</span>
-      </div>
-
-    </div>
-
-    <!-- Column 3: Contact Info -->
-
-    <div style="display:flex; padding-top: 120px; flex-direction:column; gap:16px; align-items:flex-end;">
-
-      <div style="display:flex; gap:14px;">
-        <a href="https://www.linkedin.com/company/aiprivacyconsultancy/about/" target="_blank">
-          <img src="images/linkedin.svg" alt="LinkedIn" style="width:20px;">
-        </a>
-        <a href="https://www.facebook.com/people/AIPrivacyConsultancy/61576410366729/" target="_blank">
-          <img src="images/facebook.svg" alt="Facebook" style="width:20px;">
-        </a>
-      </div>
-
-      <div style="display:flex; flex-direction:row; gap:10px;">
-        <a href="privacy.html" style="font-size:13px; width:140px; text-align:center; padding:8px 14px; border:1px solid var(--border); border-radius:6px; text-decoration:none; color:var(--text-dim); transition:all 0.2s; display:inline-block;">
-          Privacy Policy
-        </a>
-        <a href="terms.html" style="font-size:13px; width:140px; text-align:center; padding:8px 14px; border:1px solid var(--border); border-radius:6px; text-decoration:none; color:var(--text-dim); transition:all 0.2s; display:inline-block;">
-          Terms & Conditions
-        </a>
-      </div>
-
-    </div>
-    
-
-  </div>
-
-  <!-- Bottom Bar: Copyright -->
-  <div style="border-top:1px solid var(--border); padding-top:24px;">
-    <span style="font-size:13px; color:var(--text-dim);">© 2026 AIPrivacyConsultancy. All rights reserved.</span>
-  </div>
-
-</footer>
-
-<!-- ########################################################## -->
-
-
-
-  <script>
-    const obs = new IntersectionObserver(
-      entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')),
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
-  </script>
+  <script src="main.js"></script>
 
 </body>
 </html>
